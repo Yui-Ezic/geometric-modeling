@@ -7,7 +7,7 @@ import { DragControls } from "three/examples/jsm/controls/DragControls";
 extend({ DragControls });
 
 const Workspace = styled.main`
-  background-color: var(--color-gray-30);
+  background-color: #e9ecf1;
   overflow: hidden;
   width: 100%;
 `;

@@ -1,11 +1,11 @@
 import React from "react";
-import { SceneSetup } from "./components";
+import {AppLayout, SceneSetup} from "./components";
 
 function App() {
   return (
-    <div className="App">
+    <AppLayout>
       <SceneSetup/>
-    </div>
+    </AppLayout>
   );
 }
 
