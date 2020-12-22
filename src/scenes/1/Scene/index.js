@@ -1,5 +1,6 @@
 import Scene from "./Scene"
+import BaseSquare from "./BaseSquare";
 
-export { Scene }
+export { Scene,  BaseSquare}
 
 export default Scene;
