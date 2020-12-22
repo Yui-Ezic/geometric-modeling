@@ -1,6 +1,6 @@
 import React from "react";
 import { Grid, GridCameraControls } from "../../../components";
-import { BaseSquare, CornerCircles } from "."
+import {BaseSquare, CentralCircles, CornerCircles} from "."
 
 export const Controls = () => (
     <>
@@ -13,6 +13,7 @@ export const Figure = ({ ...props }) => (
     <group {...props}>
         <BaseSquare />
         <CornerCircles />
+        <CentralCircles />
     </group>
 )
 
