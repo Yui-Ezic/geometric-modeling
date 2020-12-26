@@ -39,7 +39,7 @@ const Triangles = () => {
     path.closePath();
 
     return path.getPoints();
-  }, [diagonal, cornerCircleRadius]);
+  }, [diagonal, cornerCircleRadius, outterCircleRadius]);
 
   const bufferRef = useUpdate(
     (geometry) => {
