@@ -2,6 +2,8 @@ import React from "react";
 import SceneComponent from "./Scene";
 import {SideBarHeader} from "./SideBarHeader";
 
+import { MdBorderInner } from "react-icons/md";
+
 export const prefix = "1-";
 
 export const menuItems = [
@@ -45,6 +47,7 @@ export const menuItems = [
 
 export const scene = {
     title: "Форма фигуры",
+    icon: <MdBorderInner />,
     scene: <SceneComponent />,
     sideBarHeader: <SideBarHeader />,
     menuItems,
