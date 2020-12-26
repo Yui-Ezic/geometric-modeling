@@ -6,7 +6,7 @@ import { useUpdate } from "react-three-fiber";
 export const Circle = ({
   radius = 1,
   shift = [0, 0],
-  color = 0xffffff,
+  color = 0x000000,
   lineWidth = 1,
   useArc = false,
   startAngle = 0,

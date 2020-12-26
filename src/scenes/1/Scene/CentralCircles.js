@@ -11,8 +11,8 @@ const CentralCircles = () => {
 
   return (
     <>
-      <Circle radius={innerCircleRadius} color="black" />
-      <Circle radius={outterCircleRadius} color="black" />
+      <Circle radius={innerCircleRadius} />
+      <Circle radius={outterCircleRadius} />
     </>
   );
 };

@@ -21,28 +21,24 @@ const CornerCircles = () => {
         shift={[spaceFromCenter, 0]}
         startAngle={0}
         endAngle={180}
-        color="black"
       />
       <Circle
         radius={cornerCircleRadius}
         shift={[0, spaceFromCenter]}
         startAngle={270}
         endAngle={90}
-        color="black"
       />
       <Circle
         radius={cornerCircleRadius}
         shift={[-spaceFromCenter, 0]}
         startAngle={180}
         endAngle={0}
-        color="black"
       />
       <Circle
         radius={cornerCircleRadius}
         shift={[0, -spaceFromCenter]}
         startAngle={90}
         endAngle={270}
-        color="black"
       />
     </>
   );
