@@ -93,7 +93,6 @@ const Base = styled.div`
     transition: all 0.2s ease-out;
 
     height: 100%;
-    width: 240px;
     overflow-y: auto;
 
     & > header {
@@ -219,14 +218,14 @@ const Base = styled.div`
   }
 `;
 const MenuList = styled.ul`
-  display: grid;
-  gap: 4px;
+  display: flex;
   width: 100%;
   overflow: hidden;
 
   & > li {
     width: auto;
     overflow: hidden;
+    margin-right: 5px;
     & > a {
       align-items: center;
       background-color: transparent;
