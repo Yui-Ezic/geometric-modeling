@@ -1,7 +1,7 @@
 import * as React from "react";
 import { withRouter, Redirect } from "react-router-dom";
 
-import { Main } from ".";
+import { Sidebar, Main } from "components";
 import { scenes } from "../scenes";
 
 export const SceneSetup = withRouter(({ location: { pathname } }) => {
@@ -11,6 +11,7 @@ export const SceneSetup = withRouter(({ location: { pathname } }) => {
 
     return (
         <>
+            <Sidebar {...scene} />
             <Main>{scene?.scene}</Main>
         </>
     );

@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 
 export const AppLayout = styled.div`
   display: grid;
+  grid-template-columns: auto 1fr;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
