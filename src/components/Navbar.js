@@ -89,7 +89,7 @@ const Base = styled.div`
   }
 
   & > div {
-    padding: 24px 9px 48px 8px;
+    padding: 12px 9px 12px 8px;
     transition: all 0.2s ease-out;
 
     height: 100%;
@@ -278,12 +278,6 @@ export const NavBar = () => {
   return (
     <Base data-custom-scrollbar className="navbar" data-open={open}>
       <div>
-        <header>
-          <h1>
-            <a href="http://snelsi.now.sh/" target="_blank" rel="noreferrer noopener">
-              <Logo /> <span className="optional">R.V. Zhuravlov</span>
-            </a>
-          </h1>        </header>
         <nav>
           <MenuList className="menuList">
             {Object.entries(scenes).map(([url, { title, icon }]) => (

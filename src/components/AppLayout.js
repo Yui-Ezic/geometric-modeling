@@ -15,4 +15,8 @@ export const AppLayout = styled.div`
       grid-column: 1 / 3;
     }
   }
+  
+  & > :first-child {
+    grid-column: 1 / -1;
+  }
 `;

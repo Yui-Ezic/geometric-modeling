@@ -11,7 +11,7 @@ export const menuItems = [
         title: "N",
         defaultValue: 36,
         minValue: 0.1,
-        maxValue: 100,
+        maxValue: 25,
         step: 0.1,
     },
     {

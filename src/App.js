@@ -1,9 +1,10 @@
 import React from "react";
-import {AppLayout, SceneSetup} from "./components";
+import {AppLayout, NavBar, SceneSetup} from "./components";
 
 function App() {
   return (
     <AppLayout>
+      <NavBar />
       <SceneSetup/>
     </AppLayout>
   );
