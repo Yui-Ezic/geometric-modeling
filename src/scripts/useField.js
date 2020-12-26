@@ -22,7 +22,7 @@ const useField = (fieldName, defaultValue) => {
     if (state === undefined && defaultValue !== undefined) {
       setFieldValue(defaultValue);
     }
-  }, [state, defaultValue]);
+  }, [state, defaultValue, setFieldValue]);
 
   return [state, setFieldValue];
 };
