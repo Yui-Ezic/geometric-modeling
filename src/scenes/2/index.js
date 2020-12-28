@@ -1,5 +1,5 @@
 import React from "react";
-import SceneComponent from "./Scene";
+import {Scene as SceneComponent} from "./Scene";
 import {SideBarHeader} from "./SideBarHeader";
 
 import { MdTimeline, MdRotateRight, MdRotateLeft } from "react-icons/md";
