@@ -116,7 +116,7 @@ export const menuItems = [
 ];
 
 export const scene = {
-    title: "Фигура в пространстве",
+    title: "Афінні перетворення",
     icon: <MdTimeline />,
     scene: <SceneComponent />,
     sideBarHeader: <SideBarHeader />,

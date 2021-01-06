@@ -6,6 +6,7 @@ import { useUpdate } from "react-three-fiber";
 
 import { Grid, GridCameraControls } from "components";
 import { Figure as SceneFigure } from "scenes/1/Scene/Scene";
+import { RotateFigureAroundPoint, RotationPoint } from ".";
 import { prefix } from "..";
 
 export const Figure = () => {
@@ -57,5 +58,7 @@ export const Scene = () => (
         <GridCameraControls />
         <Grid />
         <Figure />
+        <RotationPoint />
+        <RotateFigureAroundPoint />
     </>
 );
