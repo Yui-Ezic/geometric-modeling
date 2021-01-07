@@ -11,8 +11,8 @@ export const SceneSetup = withRouter(({ location: { pathname } }) => {
 
     return (
         <>
-            <Sidebar {...scene} />
             <Main>{scene?.scene}</Main>
+            <Sidebar {...scene} />
         </>
     );
 });
