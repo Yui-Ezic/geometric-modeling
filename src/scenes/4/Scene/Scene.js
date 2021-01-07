@@ -35,20 +35,29 @@ export const Figure = () => {
   const [posY] = useField(`${prefix}pos-y`);
   const [posZ] = useField(`${prefix}pos-z`);
   const [useTexture] = useField(`${prefix}use-texture`);
+  const [radiusTop] = useField(`${prefix}radius-top`);
+  const [radiusBottom] = useField(`${prefix}radius-bottom`);
+  const [height] = useField(`${prefix}height`);
+  const [offsetX] = useField(`${prefix}offset-x`);
+  const [offsetY] = useField(`${prefix}offset-y`);
+  const [rotate] = useField(`${prefix}use-rotate`);
 
   return (
     <>
       <ProjectionWrapper positionX={0.01} positionY={posY} positionZ={posZ} scaleX={0.0001}>
-        <SceneFigure />
+          <SceneFigure radiusTop={radiusTop} radiusBottom={radiusBottom} height={height} rotate={rotate}/>
       </ProjectionWrapper>
       <ProjectionWrapper positionX={posX} positionY={0.01} positionZ={posZ} scaleY={0.0001}>
-        <SceneFigure />
+          <SceneFigure radiusTop={radiusTop} radiusBottom={radiusBottom} height={height} rotate={rotate}/>
       </ProjectionWrapper>
       <ProjectionWrapper positionX={posX} positionY={posY} positionZ={0.01} scaleZ={0.0001}>
-        <SceneFigure />
+          <SceneFigure radiusTop={radiusTop} radiusBottom={radiusBottom} height={height} rotate={rotate}/>
       </ProjectionWrapper>
 
-      <SceneFigure positionX={posX} positionY={posY} positionZ={posZ} useTexture={useTexture} />
+      <SceneFigure positionX={posX} positionY={posY} positionZ={posZ} useTexture={useTexture}
+                   radiusTop={radiusTop} radiusBottom={radiusBottom} height={height} rotate={rotate}
+                   offsetX={offsetX} offsetY={offsetY}
+      />
     </>
   );
 };
